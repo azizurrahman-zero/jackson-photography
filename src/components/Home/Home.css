@@ -1,11 +1,22 @@
-.image-section {
-    height: 540px;
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@400;700&family=Montserrat:wght@400;900&family=Poppins&display=swap');
+
+.banner-title {
+    font-family: 'Akshar', sans-serif;
+    color: #3A3845;
 }
 
-.left-side {
-    background-color: #F7F5F1;
+.banner-description {
+    color: #6c6b6b;
 }
 
-.right-side {
-    background-color: #272727;
+.offer-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #be3852;
+    font-weight: 900;
+    margin: 0;
+}
+
+.banner-section small {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
 }
