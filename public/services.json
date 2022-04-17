@@ -1,23 +1,38 @@
 [
     {
         "id": "625ba9c052152cc5620228e6",
-        "name": "Becky Meyers",
-        "price": 39,
-        "picture": "http://placehold.it/32x32",
-        "description": "Mollit cupidatat id non labore elit sunt aute esse deserunt aliqua occaecat laborum proident. Elit proident ullamco reprehenderit amet laborum consequat exercitation amet. Mollit ullamco nisi pariatur id magna sint est consequat quis. Anim esse proident culpa occaecat tempor nulla occaecat sit dolore. Deserunt est est consequat aute qui aliquip fugiat."
+        "name": "Photography",
+        "price": 990,
+        "picture": "https://i.ibb.co/5KvRyjv/1.png",
+        "description": [
+            "4 Hours Shoot",
+            "Portrait Light Setup",
+            "Unlimited Photos",
+            "100 Special Edited Photos"
+        ]
     },
     {
         "id": "625ba9c033446ad35867e328",
-        "name": "Michele Noble",
-        "price": 25,
-        "picture": "http://placehold.it/32x32",
-        "description": "Excepteur laboris amet amet irure voluptate enim nisi est aliquip tempor. Veniam id ipsum esse ea ea nulla ex aute nisi dolor. Irure nostrud ea ut amet excepteur irure cupidatat est aute eu excepteur do. Reprehenderit duis dolore ipsum ut id Lorem nostrud nulla mollit et labore do deserunt."
+        "name": "Cinematic Videography",
+        "price": 1200,
+        "picture": "https://i.ibb.co/PzyqwgC/2.png",
+        "description": [
+            "4-6 Minutes Promo",
+            "30-60 Minutes Cinematography",
+            "Full HD 1080p Quality",
+            "Full Frame Set Up"
+        ]
     },
     {
         "id": "625ba9c0c4d7706e261302a9",
-        "name": "Rich Chambers",
-        "price": 26,
-        "picture": "http://placehold.it/32x32",
-        "description": "Dolore cupidatat aute et excepteur laboris culpa nostrud Lorem ullamco nisi proident consectetur qui. Mollit dolore consectetur sint veniam ea in eu nulla ut et magna ipsum aute est. Occaecat labore aliqua incididunt adipisicing in pariatur aliqua voluptate cillum."
+        "name": "Short Film",
+        "price": 4500,
+        "picture": "https://i.ibb.co/ykyCYQ8/3.png",
+        "description": [
+            "3-4 Hours Pre/Post Outdoor Session",
+            "4-6 Minutes Promo",
+            "40-60 Minutes Film",
+            "Exclusive Drone Shots"
+        ]
     }
 ]
