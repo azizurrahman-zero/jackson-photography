@@ -1,18 +1,14 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import banner from '../../images/banner.png'
+import Services from '../Services/Services';
 import './Home.css'
 
 const Home = () => {
-    const navigate = useNavigate();
-
-    const handleBookNowButton = () => {
-        navigate("/shop")
-    }
     return (
         <div>
-            <section className='banner-section'>
+            <section className='my-5 banner-section'>
                 <Container className='d-flex justify-content-between align-items-center'>
                     <div className='w-50'>
                         <h3 className='fw-bold display-6 mb-3 banner-title'>Capture your moment with Me!</h3>
@@ -27,13 +23,16 @@ const Home = () => {
                             </div>
                         </div>
                         <small>*On all wedding packages</small>
-                        <Button className='d-block mt-4' onClick={handleBookNowButton}>Book Now</Button>
+                        <Link to='/login' className='text-decoration-none'>
+                            <Button className='d-block mt-4 px-3 button'>Book Now</Button>
+                        </Link>
                     </div>
                     <div className='w-50'>
                         <img className='w-100' src={banner} alt="banner" />
                     </div>
                 </Container>
             </section>
+            <Services></Services>
         </div>
     );
 };
