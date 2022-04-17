@@ -5,10 +5,6 @@
     color: #3A3845;
 }
 
-.banner-description {
-    color: #6c6b6b;
-}
-
 .colored-text {
     font-family: 'Montserrat', sans-serif;
     color: #be3852;
@@ -25,7 +21,8 @@ small {
 
 }
 
-.button:hover {
+.button:hover,
+.button:active {
     background-color: #C74B50;
     border-color: #C74B50;
 }

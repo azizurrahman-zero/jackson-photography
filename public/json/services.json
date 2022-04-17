@@ -1,0 +1,32 @@
+[
+    {
+        "id": "625c1ccabac77ce850f320bd",
+        "icon": "https://i.ibb.co/XSnKLhL/camera.png",
+        "name": "Wedding Photography"
+    },
+    {
+        "id": "625c1cca84acf302c7238ffd",
+        "icon": "https://i.ibb.co/Jt3BgRm/lightning.png",
+        "name": "Capturing The Ceremony"
+    },
+    {
+        "id": "625c1ccad5eb7b4dce9cce78",
+        "icon": "https://i.ibb.co/TTsdwzQ/idea.png",
+        "name": "Black & White Option"
+    },
+    {
+        "id": "625c1ccadbea9d24014331dc",
+        "icon": "https://i.ibb.co/c1Zsdv7/video-camera.png",
+        "name": "Professional Videos"
+    },
+    {
+        "id": "625c1ccad743df553ca5197b",
+        "icon": "https://i.ibb.co/ww0pxbg/umbrella.png",
+        "name": "Pre Wedding Shoots"
+    },
+    {
+        "id": "625c1ccaad47e5f8374e0e33",
+        "icon": "https://i.ibb.co/6sWCpPJ/heart.png",
+        "name": "Honeymoon Shoot"
+    }
+]
