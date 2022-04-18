@@ -8,6 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './SocialLogin.css'
 import { useLocation, useNavigate } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 
 const SocialLogin = () => {
     const location = useLocation();
@@ -20,6 +21,10 @@ const SocialLogin = () => {
 
     if (googleUser || facebookUser) {
         navigate(from, { replace: true });
+    }
+
+    if (googleLoading || facebookLoading) {
+        return <Loading></Loading>
     }
 
     if (googleError) {

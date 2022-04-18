@@ -8,6 +8,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
+import Loading from '../Loading/Loading';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -31,13 +32,17 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
+    if (loading || sending) {
+        return <Loading></Loading>
+    }
+
     if (error) {
-        const errorMessage = error.message.substring(22).replace(/[\(\)']+/g, '').replace(/[\-']+/g, ' ');
+        const errorMessage = error.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
     }
 
-    const handleSubmit = event => {
-        event.preventDefault();
+    const handleSubmit = e => {
+        e.preventDefault();
 
         const email = emailRef.current.value;
         const password = passwordRef.current.value;

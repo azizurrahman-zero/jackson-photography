@@ -1,27 +1,39 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Button, Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import weddingL from '../../images/weddingL.png';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Register.css'
+import Loading from '../Loading/Loading';
 
 const Register = () => {
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
+    const navigate = useNavigate();
+
     const [
         createUserWithEmailAndPassword,
-        user,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
-    const navigate = useNavigate();
+    if (loading) {
+        return <Loading></Loading>
+    }
+
+    if (error) {
+        const errorMessage = error?.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
+        toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
+    }
 
     const handleRegister = async e => {
         e.preventDefault();
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const password = e.target.password.value;
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
 
         createUserWithEmailAndPassword(email, password);
         navigate('/home');
@@ -38,20 +50,33 @@ const Register = () => {
                             label="Full Name"
                             className="mb-3"
                         >
-                            <Form.Control type="text" name='name' placeholder="Jack Robinson" />
+                            <Form.Control
+                                type="text"
+                                placeholder="Jack Robinson"
+                            />
                         </FloatingLabel>
                         <FloatingLabel
                             controlId="floatingInputEmail"
                             label="Email address"
                             className="mb-3"
                         >
-                            <Form.Control type="email" name='email' placeholder="name@example.com" />
+                            <Form.Control
+                                ref={emailRef}
+                                type="email"
+                                placeholder="name@example.com"
+                                required
+                            />
                         </FloatingLabel>
                         <FloatingLabel
                             controlId="floatingPassword"
                             label="Password"
                         >
-                            <Form.Control type="password" name='password' placeholder="Password" />
+                            <Form.Control
+                                ref={passwordRef}
+                                type="password"
+                                placeholder="Password"
+                                required
+                            />
                         </FloatingLabel>
                         <Button className='px-3 d-block w-100 mt-4 button' type='submit'>Register</Button>
                     </Form>
@@ -63,6 +88,9 @@ const Register = () => {
                 </Col>
 
             </Row>
+            <ToastContainer
+                pauseOnFocusLoss={false}
+            ></ToastContainer>
         </Container>
     );
 };

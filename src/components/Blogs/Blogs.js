@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ListGroup, Table } from 'react-bootstrap';
+import { Container, Table } from 'react-bootstrap';
 
 const Blogs = () => {
     return (
