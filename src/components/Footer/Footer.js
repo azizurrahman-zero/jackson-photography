@@ -12,7 +12,7 @@ const Footer = () => {
         <footer>
             <Container className='d-flex flex-column flex-column align-items-center my-5'>
                 <img src={logo} alt="logo" />
-                <div className='d-flex gap-4 my-4'>
+                <div className='d-flex gap-4 my-4 flex-column flex-md-row align-items-center'>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/home'>Home</Link>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/about-me'>About Me</Link>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/blogs'>Blogs</Link>

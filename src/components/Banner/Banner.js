@@ -7,8 +7,8 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div className='my-5 banner-section'>
-            <Container className='d-flex justify-content-between align-items-center'>
-                <div className='w-50'>
+            <Container className='d-flex justify-content-between align-items-center flex-column-reverse gap-md-0 gap-4 flex-md-row'>
+                <div className='w-100 w-md-50'>
                     <h3 className='fw-bold display-6 mb-3 section-title'>Capture your moment with Me!</h3>
                     <p className='mb-4 description'>A professional photoshoot for your wedding is essential to keep memories alive through the years. Keep remembering the best moments in life by me.</p>
                     <div className='position-relative'>
@@ -27,7 +27,7 @@ const Banner = () => {
                         <Button className='px-3 button'>Book Now</Button>
                     </Link>
                 </div>
-                <div className='w-50'>
+                <div className='w-100 w-md-50 me-4 me-md-0'>
                     <img className='w-100' src={banner} alt="banner" />
                 </div>
             </Container>

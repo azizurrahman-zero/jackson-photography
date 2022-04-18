@@ -8,7 +8,7 @@ const Services = () => {
     return (
         <Container className='py-5'>
             <h3 className='fw-bold display-6 mb-5 text-center section-title'>Services</h3>
-            <Row xs={1} md={3} className="g-5">
+            <Row xs={1} md={3} className="gy-5 md-gx-5">
                 {
                     services.map(service =>
                         <Service
