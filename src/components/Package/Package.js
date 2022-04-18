@@ -21,7 +21,7 @@ const Package = ({ pack }) => {
                         <ListGroup.Item>{description[2]}</ListGroup.Item>
                         <ListGroup.Item>{description[3]}</ListGroup.Item>
                     </ListGroup>
-                    <Link to='/login' className='text-decoration-none d-inline-block mt-4'>
+                    <Link to='/checkout' className='text-decoration-none d-inline-block mt-4'>
                         <Button className='px-3 button'>Book Now</Button>
                     </Link>
                 </Card.Body>

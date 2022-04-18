@@ -1,0 +1,9 @@
+footer a {
+    letter-spacing: 1px;
+
+}
+
+footer a:hover,
+footer a:focus {
+    color: #C74B50;
+}

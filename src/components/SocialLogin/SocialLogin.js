@@ -7,16 +7,19 @@ import auth from '../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './SocialLogin.css'
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const SocialLogin = () => {
+    const location = useLocation();
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
     const [signInWithFacebook, facebookUser, facebookLoading, facebookError] = useSignInWithFacebook(auth);
+
+    let from = location.state?.from?.pathname || "/";
 
     const navigate = useNavigate();
 
     if (googleUser || facebookUser) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     if (googleError) {
