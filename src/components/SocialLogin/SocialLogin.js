@@ -28,12 +28,12 @@ const SocialLogin = () => {
     }
 
     if (googleError) {
-        const errorMessage = googleError.message.substring(22).replace(/[\(\)']+/g, '').replace(/[\-']+/g, ' ');
+        const errorMessage = googleError.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
     }
 
     if (facebookError) {
-        const errorMessage = facebookError.message.substring(22).replace(/[\(\)']+/g, '').replace(/[\-']+/g, ' ');
+        const errorMessage = facebookError.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
     }
 
