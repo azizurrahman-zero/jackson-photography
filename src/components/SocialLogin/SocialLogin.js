@@ -19,19 +19,23 @@ const SocialLogin = () => {
 
     const navigate = useNavigate();
 
+    // get user
     if (googleUser || facebookUser) {
         navigate(from, { replace: true });
     }
 
+    // spinner
     if (googleLoading || facebookLoading) {
         return <Loading></Loading>
     }
 
+    // google error
     if (googleError) {
         const errorMessage = googleError.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
     }
 
+    // facebook error
     if (facebookError) {
         const errorMessage = facebookError.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))

@@ -10,7 +10,7 @@ Live link [Jackson Photography](https://jackson-photography-zero.web.app/).
 * Three login and registration process is implement by Firebase Authentication.
 * In Blog section three question and answer is added.
 
-## Used frameworks, libraries and packages
+## Used technologies (frameworks, libraries and packages)
 
 * ### `React Bootstrap`
 * ### `React Router`

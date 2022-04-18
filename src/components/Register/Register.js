@@ -21,15 +21,18 @@ const Register = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
+    // spinner
     if (loading) {
         return <Loading></Loading>
     }
 
+    // display error
     if (error) {
         const errorMessage = error?.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
     }
 
+    // register
     const handleRegister = async e => {
         e.preventDefault();
         const email = emailRef.current.value;

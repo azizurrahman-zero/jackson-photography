@@ -10,6 +10,7 @@ import './Header.css'
 const Header = () => {
     const [user] = useAuthState(auth);
 
+    // sign out
     const handleSignOut = () => {
         signOut(auth);
     }
@@ -24,7 +25,7 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Link className='nav-link' to="/">Home</Link>
-                            <Link className='nav-link' to="/about-me">About Me</Link>
+                            <Link className='nav-link' to="/about">About Me</Link>
                             <Link className='nav-link' to="/blogs">Blogs</Link>
                         </Nav>
                         {

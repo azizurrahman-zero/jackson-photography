@@ -2,6 +2,7 @@
     padding: 0;
 }
 
+/* mobile device responsive */
 @media only screen and (max-width: 576px) {
     .logo-image {
         width: 180px;

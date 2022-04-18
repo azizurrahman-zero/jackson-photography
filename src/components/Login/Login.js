@@ -32,15 +32,18 @@ const Login = () => {
         navigate(from, { replace: true });
     }
 
+    // spinner
     if (loading || sending) {
         return <Loading></Loading>
     }
 
+    // display error
     if (error) {
         const errorMessage = error.message.substring(22).replace(/[()']+/g, '').replace(/[-']+/g, ' ');
         toast.error(errorMessage.charAt(0).toUpperCase() + errorMessage.slice(1))
     }
 
+    // sign in
     const handleSubmit = e => {
         e.preventDefault();
 
@@ -50,6 +53,7 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    // reset password
     const handleResetPassword = async () => {
         const email = emailRef.current.value;
 
@@ -76,13 +80,23 @@ const Login = () => {
                             label="Email address"
                             className="mb-3"
                         >
-                            <Form.Control ref={emailRef} type="email" placeholder="name@example.com" />
+                            <Form.Control
+                                ref={emailRef}
+                                type="email"
+                                placeholder="name@example.com"
+                                required
+                            />
                         </FloatingLabel>
                         <FloatingLabel
                             controlId="floatingPassword"
                             label="Password"
                         >
-                            <Form.Control ref={passwordRef} type="password" placeholder="Password" />
+                            <Form.Control
+                                ref={passwordRef}
+                                type="password"
+                                placeholder="Password"
+                                required
+                            />
                         </FloatingLabel>
                         <div className='d-flex justify-content-between mt-2'>
                             <p className='text-danger'>{errorMessage}</p>

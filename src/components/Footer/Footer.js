@@ -5,6 +5,7 @@ import logo from '../../images/logo.svg'
 import './Footer.css'
 
 const Footer = () => {
+    // get the year
     const today = new Date();
     const year = today.getFullYear();
 
@@ -14,7 +15,7 @@ const Footer = () => {
                 <img src={logo} alt="logo" />
                 <div className='d-flex gap-4 my-4 flex-column flex-md-row align-items-center'>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/home'>Home</Link>
-                    <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/about-me'>About Me</Link>
+                    <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/about'>About Me</Link>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/blogs'>Blogs</Link>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/login'>Login</Link>
                     <Link className='text-decoration-none text-uppercase fs-5 text-dark' to='/register'>Register</Link>
