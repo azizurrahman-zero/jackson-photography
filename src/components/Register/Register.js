@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import weddingL from '../../images/weddingL.png';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Register.css'
 
 const Register = () => {
@@ -30,6 +31,7 @@ const Register = () => {
             <Row className='align-items-center'>
                 <Col>
                     <h4 className='fw-bold mb-3 section-title'>Get started with Jackson Photography!</h4>
+                    <SocialLogin></SocialLogin>
                     <Form onSubmit={handleRegister}>
                         <FloatingLabel
                             controlId="floatingInputName"

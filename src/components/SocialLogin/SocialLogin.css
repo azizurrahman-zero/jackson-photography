@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+.social-button {
+    border: 1px solid #be3852;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.line {
+    background-color: #DBDBDB;
+    height: 1px;
+}

@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Button, Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 import auth from '../../firebase.init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import weddingR from '../../images/weddingR.png';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -63,6 +64,7 @@ const Login = () => {
                 </Col>
                 <Col>
                     <h4 className='fw-bold mb-3 section-title'>Welcome Back</h4>
+                    <SocialLogin></SocialLogin>
                     <Form onSubmit={handleSubmit}>
                         <FloatingLabel
                             controlId="floatingInput"
