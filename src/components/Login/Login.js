@@ -72,7 +72,7 @@ const Login = () => {
                     <img className='w-100' src={weddingR} alt="weddingR" />
                 </Col>
                 <Col>
-                    <h4 className='fw-bold mb-3 section-title'>Welcome Back</h4>
+                    <h4 className='fw-bold mb-4 section-title display-6 text-center'>Welcome Back!</h4>
                     <SocialLogin></SocialLogin>
                     <Form onSubmit={handleSubmit}>
                         <FloatingLabel

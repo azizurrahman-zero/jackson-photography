@@ -45,7 +45,7 @@ const Register = () => {
         <Container className='my-5'>
             <Row className='align-items-center'>
                 <Col>
-                    <h4 className='fw-bold mb-3 section-title'>Get started with Jackson Photography!</h4>
+                    <h4 className='fw-bold mb-4 display-6 section-title text-center'>Get started!</h4>
                     <SocialLogin></SocialLogin>
                     <Form onSubmit={handleRegister}>
                         <FloatingLabel
