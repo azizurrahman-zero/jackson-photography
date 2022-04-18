@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import ar from '../../images/ar.jpg'
+import ar from '../../images/ar.png'
 
 const AboutMe = () => {
     const handleClick = () => {
         window.open("https://www.facebook.com/azizurrahman.zero");
     };
     return (
-        <Container>
+        <Container className='my-5'>
             <Row className='g-5 align-items-center'>
                 <Col xs={5}>
                     <img src={ar} class="img-fluid rounded" alt="ar" />

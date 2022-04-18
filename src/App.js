@@ -10,6 +10,7 @@ import CheckOut from './components/CheckOut/CheckOut';
 import AboutMe from './components/AboutMe/AboutMe';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
+import Blogs from './components/Blogs/Blogs';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/about-me" element={<AboutMe></AboutMe>}></Route>
-        <Route path="/blogs" element={<Home></Home>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/checkout" element={
