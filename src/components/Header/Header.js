@@ -2,6 +2,7 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
 import logo from '../../images/logo.svg'
 import './Header.css'
@@ -16,23 +17,23 @@ const Header = () => {
         <header>
             <Navbar collapseOnSelect expand="lg" bg="light">
                 <Container>
-                    <Navbar.Brand className="logo" href="#home">
-                        <img src={logo} alt="logo" />
-                    </Navbar.Brand>
+                    <Link to='/' className="logo navbar-brand">
+                        <img className='logo-image' src={logo} alt="logo" />
+                    </Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="#features">Home</Nav.Link>
-                            <Nav.Link href="/about-me">About Me</Nav.Link>
-                            <Nav.Link href="#pricing">Blogs</Nav.Link>
+                            <Link className='nav-link' to="/">Home</Link>
+                            <Link className='nav-link' to="/about-me">About Me</Link>
+                            <Link className='nav-link' to="/blogs">Blogs</Link>
                         </Nav>
                         {
                             user ?
                                 <Button onClick={handleSignOut} className='px-3 button'>Sign Out</Button>
                                 :
                                 <Nav>
-                                    <Nav.Link href="/login">Login</Nav.Link>
-                                    <Nav.Link href="/register">Register </Nav.Link>
+                                    <Link className='nav-link' to="/login">Login</Link>
+                                    <Link className='nav-link' to="/register">Register </Link>
                                 </Nav>
                         }
                     </Navbar.Collapse>
