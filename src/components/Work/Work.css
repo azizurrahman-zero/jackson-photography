@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+.work-item:hover .work-icon {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.work-icon {
+    width: 100px;
+    filter: grayscale(1);
+}
+
+.work-name {
+    font-family: 'Oswald', sans-serif;
+}

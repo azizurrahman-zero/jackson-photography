@@ -1,32 +1,38 @@
 [
     {
-        "id": "625c1ccabac77ce850f320bd",
-        "icon": "https://i.ibb.co/XSnKLhL/camera.png",
-        "name": "Wedding Photography"
+        "id": "625ba9c052152cc5620228e6",
+        "name": "Photography",
+        "price": 990,
+        "picture": "https://i.ibb.co/5KvRyjv/1.png",
+        "description": [
+            "4 Hours Shoot",
+            "Portrait Light Setup",
+            "Unlimited Photos",
+            "100 Special Edited Photos"
+        ]
     },
     {
-        "id": "625c1cca84acf302c7238ffd",
-        "icon": "https://i.ibb.co/Jt3BgRm/lightning.png",
-        "name": "Capturing The Ceremony"
+        "id": "625ba9c033446ad35867e328",
+        "name": "Cinematic Videography",
+        "price": 1200,
+        "picture": "https://i.ibb.co/PzyqwgC/2.png",
+        "description": [
+            "4-6 Minutes Promo",
+            "30-60 Minutes Cinematography",
+            "Full HD 1080p Quality",
+            "Full Frame Set Up"
+        ]
     },
     {
-        "id": "625c1ccad5eb7b4dce9cce78",
-        "icon": "https://i.ibb.co/TTsdwzQ/idea.png",
-        "name": "Black & White Option"
-    },
-    {
-        "id": "625c1ccadbea9d24014331dc",
-        "icon": "https://i.ibb.co/c1Zsdv7/video-camera.png",
-        "name": "Professional Videos"
-    },
-    {
-        "id": "625c1ccad743df553ca5197b",
-        "icon": "https://i.ibb.co/ww0pxbg/umbrella.png",
-        "name": "Pre Wedding Shoots"
-    },
-    {
-        "id": "625c1ccaad47e5f8374e0e33",
-        "icon": "https://i.ibb.co/6sWCpPJ/heart.png",
-        "name": "Honeymoon Shoot"
+        "id": "625ba9c0c4d7706e261302a9",
+        "name": "Short Film",
+        "price": 4500,
+        "picture": "https://i.ibb.co/ykyCYQ8/3.png",
+        "description": [
+            "3-4 Hours Pre/Post Outdoor Session",
+            "4-6 Minutes Promo",
+            "40-60 Minutes Film",
+            "Exclusive Drone Shots"
+        ]
     }
 ]
