@@ -10,7 +10,7 @@ const Banner = () => {
             <Container className='d-flex justify-content-between align-items-center'>
                 <div className='w-50'>
                     <h3 className='fw-bold display-6 mb-3 section-title'>Capture your moment with Me!</h3>
-                    <p className='mb-4 banner-description'>A professional photoshoot for your wedding is essential to keep memories alive through the years. Keep remembering the best moments in life by me.</p>
+                    <p className='mb-4 description'>A professional photoshoot for your wedding is essential to keep memories alive through the years. Keep remembering the best moments in life by me.</p>
                     <div className='position-relative'>
                         <div className='d-flex align-items-center gap-2'>
                             <div>

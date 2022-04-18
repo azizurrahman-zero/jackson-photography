@@ -3,15 +3,18 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Button, Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
 import auth from '../../firebase.init';
 import weddingR from '../../images/weddingR.png';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 
 const Login = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const emailRef = useRef('');
     const passwordRef = useRef('');
+
+    let from = location.state?.from?.pathname || "/";
     let errorMessage;
 
     const [
@@ -24,7 +27,7 @@ const Login = () => {
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     if (error) {
