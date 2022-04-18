@@ -22,7 +22,13 @@ small {
 }
 
 .button:hover,
-.button:active {
+.button:active,
+.button:focus {
     background-color: #C74B50;
     border-color: #C74B50;
+    box-shadow: none;
+}
+
+.button:active:focus {
+    box-shadow: 0 0 0 0.25rem #c84c503d;
 }

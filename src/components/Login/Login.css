@@ -1,0 +1,13 @@
+.custom-button {
+    color: #be3852;
+}
+
+.custom-button:hover {
+    color: #C74B50;
+}
+
+.custom-button:focus,
+.custom-button:focus-visible {
+    box-shadow: none;
+    outline: none;
+}
