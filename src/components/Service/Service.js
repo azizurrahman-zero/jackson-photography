@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Service.css'
 
 const Service = ({ service }) => {
-    const { picture, name, description, price } = service;
+    const { picture, name, descriptionPoint, description, price } = service;
     return (
         <Col>
             <Card className="h-100">
@@ -15,13 +15,14 @@ const Service = ({ service }) => {
                         <small>+VAT</small>
                     </div>
                     <Card.Title className='fw-bold  title-text'>{name}</Card.Title>
-                    <ListGroup variant="flush">
-                        <ListGroup.Item>{description[0]}</ListGroup.Item>
-                        <ListGroup.Item>{description[1]}</ListGroup.Item>
-                        <ListGroup.Item>{description[2]}</ListGroup.Item>
-                        <ListGroup.Item>{description[3]}</ListGroup.Item>
+                    <ListGroup variant="flush" className='mb-3'>
+                        <ListGroup.Item>{descriptionPoint[0]}</ListGroup.Item>
+                        <ListGroup.Item>{descriptionPoint[1]}</ListGroup.Item>
+                        <ListGroup.Item>{descriptionPoint[2]}</ListGroup.Item>
+                        <ListGroup.Item>{descriptionPoint[3]}</ListGroup.Item>
                     </ListGroup>
-                    <Link to='/checkout' className='text-decoration-none d-inline-block mt-4'>
+                    <p className='description'>{description}</p>
+                    <Link to='/checkout' className='text-decoration-none d-inline-block mt-3'>
                         <Button className='px-3 button'>Book Now</Button>
                     </Link>
                 </Card.Body>

@@ -4,7 +4,8 @@
         "name": "Photography",
         "price": 990,
         "picture": "https://i.ibb.co/5KvRyjv/1.png",
-        "description": [
+        "description": "All needed photographic element, portrait light setup including full-Frame DSLR and mirrorless camera will included.",
+        "descriptionPoint": [
             "4 Hours Shoot",
             "Portrait Light Setup",
             "Unlimited Photos",
@@ -16,7 +17,8 @@
         "name": "Cinematic Videography",
         "price": 1200,
         "picture": "https://i.ibb.co/PzyqwgC/2.png",
-        "description": [
+        "description": "Videos shoot with portrait light setup including full frame DSLR Camera. Quick set-up softBox will included.",
+        "descriptionPoint": [
             "4-6 Minutes Promo",
             "30-60 Minutes Cinematography",
             "Full HD 1080p Quality",
@@ -28,7 +30,8 @@
         "name": "Short Film",
         "price": 4500,
         "picture": "https://i.ibb.co/ykyCYQ8/3.png",
-        "description": [
+        "description": "Special lenses and outdoor light setup fly cam, jib arm, slider, digital crane, sports camera & additional light will included.",
+        "descriptionPoint": [
             "3-4 Hours Pre/Post Outdoor Session",
             "4-6 Minutes Promo",
             "40-60 Minutes Film",
