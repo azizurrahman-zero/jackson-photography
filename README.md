@@ -1,18 +1,19 @@
 # Jackson Photography
 
-Live link [Jackson Photography](https://jackson-photography-zero.web.app/).
+This is a **professional photographer**’s personal website. The services with names, prices, images, and short descriptions are available on the site. Also, by clicking the ‘Book Now’ button, anyone can book a schedule.
 
-## About this Project:
+##  Features
 
-* This is a personal website of independent service provider, a photographer.
-* There are home, about me and blog page.
-* Login and registration system is added in the site.
-* Three login and registration process is implement by Firebase Authentication.
-* In Blog section three question and answer is added.
+**➔** Single-page application with Firebase Authentication system  
+**➔** Added Protected Page, only accessed by authenticated users  
+**➔** Data fetched from Rest API also handled errors and displayed with React-toastify
 
-## Used technologies (frameworks, libraries and packages)
+## Used Technology
 
-* ### `React Bootstrap`
-* ### `React Router`
-* ### `React Firebase Hooks`
-* ### `React Toastify`
+**React**, **React Router**, **Firebase**, **React Bootstrap**, **React-toastify**, **React-firebase-hooks**, etc.
+
+## Links
+
+**[Live Site](https://jackson-photography-zero.web.app/)
+ || [Resume](https://drive.google.com/file/d/19IBXBf7c01MchYIkbrcZmL1L_bbl9day/view?usp=sharing)
+ || [LinkedIn](https://www.linkedin.com/in/azizurrahman-zero/)**
